@@ -1,4 +1,4 @@
-from classifier.models import Classifier, TrainVector, Label, TestVector
+from app_classifier.models import Classifier, TrainVector, Label, TestVector
 from rest_framework import serializers
 
 

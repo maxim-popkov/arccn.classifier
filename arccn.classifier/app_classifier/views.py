@@ -1,5 +1,5 @@
-from classifier.models import Classifier, TrainVector, Label
-from classifier.serializers import ClsSerializer, VectorSerializer, LabelSerializer
+from app_classifier.models import Classifier, TrainVector, Label
+from app_classifier.serializers import ClsSerializer, VectorSerializer, LabelSerializer
 from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response

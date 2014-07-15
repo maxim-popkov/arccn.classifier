@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
 from django.conf import settings
-from classifier.models import TestVector, TrainVector, Classifier, Label
+from app_classifier.models import TestVector, TrainVector, Classifier, Label
 import logging
 import classify_master as cm
 import classify_fabric as cf

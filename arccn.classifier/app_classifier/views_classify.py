@@ -1,5 +1,5 @@
-from classifier.models import TestVector
-from classifier.serializers import TestVectorSerializer
+from app_classifier.models import TestVector
+from app_classifier.serializers import TestVectorSerializer
 from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
