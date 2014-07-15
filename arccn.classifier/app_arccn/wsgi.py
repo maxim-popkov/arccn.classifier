@@ -1,5 +1,5 @@
 """
-WSGI config for rest project.
+WSGI config for app_arccn project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -8,7 +8,7 @@ https://docs.djangoproject.com/en/1.6/howto/deployment/wsgi/
 """
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "rest.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "app_arccn.settings")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
