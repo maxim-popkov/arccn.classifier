@@ -10,3 +10,4 @@
 *.sqlite3
 pip
 venv/
+rest/files/
