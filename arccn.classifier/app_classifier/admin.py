@@ -86,7 +86,7 @@ def classify_action(modeladmin, request, classifiers_set):
 
 
 class TestVectorAdmin(admin.ModelAdmin):
-    list_display = ['_assigned_id', '_isClassified', '_cls', '_lbl']
+    list_display = ['_assigned_id', '_isClassified', 'accepted','_cls', '_lbl']
     list_filter = ('isClassified', 'cls', 'lbl')
     
     def _assigned_id(self, obj):
@@ -115,8 +115,27 @@ class LabelAdmin(admin.ModelAdmin):
     list_display = ['name', 'assigned_id', 'id']
 
 class TrainVectorAdmin(admin.ModelAdmin):
-    list_display = ['assigned_id', 'lbl', 'cls']
+    list_display = ['_assigned_id', '_lbl', '_cls']
     list_filter = ('cls', 'lbl')
+
+    def _assigned_id(self, obj):
+        return obj.assigned_id
+
+    def _cls(self, obj):
+        return obj.cls
+
+    def _lbl(self, obj):
+        return obj.lbl
+
+    def _isClassified(self, obj):
+        return obj.isClassified
+
+    _assigned_id.short_description = 'Идентификатор клиента'
+    _cls.short_description = 'Классификатор'
+    _lbl.short_description = 'Категория'
+    _isClassified.short_description = 'Статус Классификации'
+    _isClassified.boolean = True
+
 
 class ClassifierAdmin(admin.ModelAdmin):
     readonly_fields = ('no_wait_for_test',)

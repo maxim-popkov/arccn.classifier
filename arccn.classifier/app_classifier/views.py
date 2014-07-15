@@ -23,7 +23,12 @@ class VectorList(APIView):
     def post(self, request, cls_id, format=None):
         serializer = VectorSerializer(data=request.DATA)
         if serializer.is_valid():
-            serializer.save()
+            client_id = serializer.data['assigned_id']
+            cls_id = serializer.data['cls']
+            is_exists = TrainVector.objects.filter(assigned_id=client_id, cls=cls_id).exists()
+            if not is_exists:
+                logging.info('Post Train: %s' %serializer)
+                serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -42,7 +47,11 @@ class LabelList(APIView):
     def post(self, request, cls_id, format=None):
         serializer = LabelSerializer(data=request.DATA)
         if serializer.is_valid():
-            serializer.save()
+            client_id = serializer.data['assigned_id']
+            cls_id = serializer.data['cls']
+            is_exists = Label.objects.filter(assigned_id=client_id, cls=cls_id).exists()
+            if not is_exists:    
+                serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

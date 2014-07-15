@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 class ClassifyList(APIView):
 
     """
-    List all snippets, or create a new snippet.
+    List all Test Vectors, or create a new.
     """
 
     def get(self, request, cls_id, format=None):
@@ -23,6 +23,10 @@ class ClassifyList(APIView):
     def post(self, request, cls_id, format=None):
         serializer = TestVectorSerializer(data=request.DATA)
         if serializer.is_valid():
-            serializer.save()
+            client_id = serializer.data['assigned_id']
+            cls_id = serializer.data['cls']
+            exists = TestVector.objects.filter(assigned_id=client_id, cls=cls_id).exists()
+            if not exists:
+                serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
