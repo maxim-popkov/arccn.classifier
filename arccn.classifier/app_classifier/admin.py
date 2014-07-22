@@ -63,7 +63,7 @@ def classify_action(modeladmin, request, classifiers_set):
         raw_test_vectors = db_clf.testvector_set.all()
         title = db_clf.title
         test_docs, _ = get_docs(raw_test_vectors)
-        clf = cf.Classifier(settings.MEDIA_ROOT, 'clf_name')    
+        clf = cf.Classifier(settings.MEDIA_ROOT, title)    
 
 #    logging.info(test_docs)
         test_set = clf.weight_test_vectors(test_docs)
