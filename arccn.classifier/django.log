@@ -138,3 +138,192 @@ Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1
 Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F10A048>
 Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F128240>
 Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4CA080>
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F09A4A8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F160D30>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F354E80>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F142D68>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F170A20>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1E3E80>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1D5278>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F14DCF8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F13C9E8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F327208>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1F6E48>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F168668>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1704A8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F0B0F98>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F354240>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F0AC940>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1DE1D0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F031D68>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F327BA8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F179EB8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000388CE80>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F09A518>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F170588>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F13CD30>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F170E10>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x00000000039482B0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F16C9B0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1705C0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F048588>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F179B38>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1795C0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F174AC8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F170320>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F013828>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F028160>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F0AC940>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4F79E8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F031D30>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F028470>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F048240>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F028198>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x0000000003948E10>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F358F28>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x0000000003948EB8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F170BE0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F0A0438>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1F4390>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1DE908>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F170EB8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F358F28>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F14D198>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F098400>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1422B0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000388CE10>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1703C8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1D5240>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F174B00>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F031CC0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F0A6D30>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000388CE80>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000EF8A978>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1E9438>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F16C2E8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F351588>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1F4FD0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F351320>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F031080>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1D5DA0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1608D0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000388CE80>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F0A00B8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x0000000003948E10>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F142D68>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F0A6D30>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F170588>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F09C080>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F1604E0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F0484A8>
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F60BBE0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F3BB048>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F5FC3C8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F5FBAC8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4A9860>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4B3B00>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4B9E48>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F49C438>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F496390>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4B9F98>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4B9470>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4AEE10>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4C5550>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F3BBE48>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F49C780>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000383FAC8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4B9A20>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4A9630>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F60BA20>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F49C780>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F74B3C8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000393F0B8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F74BDA0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F6328D0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F551780>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4A9550>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F551E10>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F60B518>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F5FBDD8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4A9438>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F493828>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4BCDD8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000393FC50>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000383FC88>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F728160>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F3BBE80>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x0000000003933208>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F74FEB8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000383FB00>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F632198>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F632EB8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000383FD30>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F741A90>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4C5828>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F6326D8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F60B860>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F60BBE0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F53F630>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F612D68>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F751518>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F5FC668>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4BF2B0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F751198>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F612A58>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x0000000003850F28>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F542048>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F751400>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4BFFD0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F399710>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F742438>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F736C50>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F542FD0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F3ADEB8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F3998D0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F7424A8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F4BC3C8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F741208>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F3C9630>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x0000000003933080>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F7426D8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F6320B8>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F741E80>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F612DA0>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000393F080>
+Post Train: <app_classifier.serializers.VectorSerializer object at 0x000000000F7592B0>
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START

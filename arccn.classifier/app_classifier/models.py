@@ -49,6 +49,7 @@ class TrainVector(models.Model):
     cls = models.ForeignKey(Classifier)
     lbl = models.ForeignKey(Label)
     data = models.TextField()
+    title = models.CharField(max_length=512, blank=True)
 
     class Meta:
         verbose_name = u'Обучающий вектор'
@@ -77,6 +78,8 @@ class TestVector(models.Model):
     data = models.TextField()
     isClassified = models.BooleanField(default=False)
     accepted = models.BooleanField(default=False)
+    title = models.CharField(max_length=512, blank=True)
+
 
     class Meta:
         verbose_name = u'Классифицируемый вектор'

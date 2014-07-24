@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
 from django.conf import settings
+from django.forms import TextInput
+from django.db import models
 from app_classifier.models import TestVector, TrainVector, Classifier, Label
 import logging
 import classify_master as cm
@@ -86,9 +88,16 @@ def classify_action(modeladmin, request, classifiers_set):
 
 
 class TestVectorAdmin(admin.ModelAdmin):
-    list_display = ['_assigned_id', '_isClassified', 'accepted','_cls', '_lbl']
+    list_display = ['_assigned_id', 'title', '_isClassified', 'accepted','_cls', '_lbl']
     list_filter = ('isClassified', 'cls', 'lbl')
     
+    formfield_overrides = {
+        models.CharField: {'widget': TextInput(attrs={'size':'20'})},
+    }
+
+    def _title(self, obj):
+        return obj.title
+
     def _assigned_id(self, obj):
         return obj.assigned_id
 
@@ -101,6 +110,7 @@ class TestVectorAdmin(admin.ModelAdmin):
     def _isClassified(self, obj):
         return obj.isClassified
 
+    _title.short_description = 'Название документа'
     _assigned_id.short_description = 'Идентификатор клиента'
     _cls.short_description = 'Классификатор'
     _lbl.short_description = 'Категория'
@@ -115,8 +125,15 @@ class LabelAdmin(admin.ModelAdmin):
     list_display = ['name', 'assigned_id', 'id']
 
 class TrainVectorAdmin(admin.ModelAdmin):
-    list_display = ['_assigned_id', '_lbl', '_cls']
+    list_display = ['_assigned_id', '_title', '_lbl', '_cls']
     list_filter = ('cls', 'lbl')
+
+    formfield_overrides = {
+        models.CharField: {'widget': TextInput(attrs={'size':'20'})},
+    }
+
+    def _title(self, obj):
+        return obj.title
 
     def _assigned_id(self, obj):
         return obj.assigned_id
@@ -130,6 +147,7 @@ class TrainVectorAdmin(admin.ModelAdmin):
     def _isClassified(self, obj):
         return obj.isClassified
 
+    _title.short_description = 'Название документа'
     _assigned_id.short_description = 'Идентификатор клиента'
     _cls.short_description = 'Классификатор'
     _lbl.short_description = 'Категория'
