@@ -88,7 +88,7 @@ def classify_action(modeladmin, request, classifiers_set):
 
 
 class TestVectorAdmin(admin.ModelAdmin):
-    list_display = ['_assigned_id', 'title', '_isClassified', 'accepted','_cls', '_lbl']
+    list_display = ['_assigned_id', '_title', '_isClassified', 'accepted','_cls', '_lbl']
     list_filter = ('isClassified', 'cls', 'lbl')
     
     formfield_overrides = {
