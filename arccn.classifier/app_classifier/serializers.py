@@ -35,8 +35,10 @@ class LabelSerializer(serializers.ModelSerializer):
 class TestVectorSerializer(serializers.ModelSerializer):
 
     """Serializer class for Test Vector model"""
+    lbl = serializers.SlugRelatedField(read_only=True, slug_field='assigned_id')
 
     class Meta:
         model = TestVector
         fields = ('id', 'assigned_id', 'accepted','data', 'cls', 'lbl', 'title')
-        read_only_fields = ('id','lbl','accepted')
+        # read_only_fields = ('id','lbl','accepted')
+        read_only_fields = ('id','accepted')

@@ -91,24 +91,3 @@ class TestVector(models.Model):
 
     def __repr__(self):
         return "Client UID: %s, Label: %s, Classifier: %s " %(self.assigned_id, self.lbl.name, self.cls.title)
-
-
-# #hack
-# class string_with_title(str):
-#     def __new__(cls, value, title):
-#         instance = str.__new__(cls, value)
-#         instance._title = title
-#         return instance
- 
-#     def title(self):
-#         return self._title
- 
-#     __copy__ = lambda self: self
-#     __deepcopy__ = lambda self, memodict: self
-
-# class classifier(models.Model):
-#     class Meta:
-#         app_label = string_with_title("stuffapp", "The stuff box")
-#         # 'stuffapp' is the name of the django app
-#         verbose_name = 'The stuff'
-#         verbose_name_plural = 'The bunch of stuff'
