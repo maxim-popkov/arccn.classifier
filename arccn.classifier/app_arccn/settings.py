@@ -14,7 +14,6 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -45,11 +44,14 @@ INSTALLED_APPS = (
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+
 )
 
 ROOT_URLCONF = 'app_arccn.urls'
@@ -96,7 +98,7 @@ SUIT_CONFIG = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'ru-RU'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Europe/Moscow'
 
@@ -106,6 +108,11 @@ USE_L10N = True
 
 USE_TZ = True
 
+LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'),)
+LANGUAGES = (
+    ('ru', 'Russian'),
+    ('en', 'English'),
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
@@ -116,7 +123,7 @@ CACHES = {
     }
 }
 
-TEMPLATE_DIRS = (os.path.join(BASE_DIR,'rest', 'templates'),)
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'files', 'static')
 STATIC_URL = '/static/'
@@ -132,6 +139,7 @@ STATICFILES_FINDERS = (
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.i18n",
 )
 
 # setup logger

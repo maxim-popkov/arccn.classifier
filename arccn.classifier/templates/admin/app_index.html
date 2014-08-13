@@ -1,0 +1,22 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+{% load url from future %}
+
+{% if not is_popup %}
+    {% block breadcrumbs %}
+        <ul class="breadcrumb">
+            <li><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+                <span class="divider">&raquo;</span></li>
+            {% for app in app_list %}
+<!--             	{% if app.name == "App_Classifier" %}
+	            	<li class="active">Букля.Рекомендации</li>
+	            {% elif app.name == "Auth" %}
+	            	<li class="active">Авторизация</li>
+	            {% endif %} -->
+                <li class="active">{% trans app.name %}</li>
+            {% endfor %}
+        </ul>
+    {% endblock %}
+{% endif %}
+
+{% block sidebar %}{% endblock %}

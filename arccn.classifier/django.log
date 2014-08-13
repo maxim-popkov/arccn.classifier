@@ -591,3 +591,97 @@ C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: Mod
   warnings.warn(_msg, ModuleDeprecationWarning)
 
 INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\django\db\backends\sqlite3\base.py:58: RuntimeWarning: SQLite received a naive datetime (2014-08-13 16:59:48.723000) while time zone support is active.
+  RuntimeWarning)
+
+C:\Users\Dales3D\Anaconda\lib\site-packages\IPython\terminal\interactiveshell.py:432: DeprecationWarning: With-statements now directly support multiple context managers
+  with nested(self.builtin_trap, self.display_trap):
+
+C:\Users\Dales3D\Anaconda\lib\site-packages\django\db\backends\sqlite3\base.py:58: RuntimeWarning: SQLite received a naive datetime (2014-08-13 17:03:50.427000) while time zone support is active.
+  RuntimeWarning)
+
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\django\db\backends\sqlite3\base.py:58: RuntimeWarning: SQLite received a naive datetime (2014-08-13 18:40:21.873000) while time zone support is active.
+  RuntimeWarning)
+
+C:\Users\Dales3D\Anaconda\lib\site-packages\IPython\terminal\interactiveshell.py:432: DeprecationWarning: With-statements now directly support multiple context managers
+  with nested(self.builtin_trap, self.display_trap):
+
+C:\Users\Dales3D\Anaconda\lib\site-packages\django\db\backends\sqlite3\base.py:58: RuntimeWarning: SQLite received a naive datetime (2014-08-13 18:45:01.279000) while time zone support is active.
+  RuntimeWarning)
+
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
+C:\Users\Dales3D\Anaconda\lib\site-packages\numpy\oldnumeric\__init__.py:11: ModuleDeprecationWarning: The oldnumeric module will be dropped in Numpy 1.9
+  warnings.warn(_msg, ModuleDeprecationWarning)
+
+INIT START
