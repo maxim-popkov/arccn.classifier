@@ -79,6 +79,7 @@ class TestVector(models.Model):
     data = models.TextField(verbose_name=u"Термы")
     isClassified = models.BooleanField(default=False, verbose_name=u"Классифицирован?")
     accepted = models.BooleanField(default=False, verbose_name=u"Одобрен?")
+    synchronized = models.BooleanField(default=False, verbose_name=u"Синхронизирован")
     title = models.CharField(max_length=512, blank=True, verbose_name=u"Название")
 
 
@@ -88,7 +89,17 @@ class TestVector(models.Model):
 
 
     def __unicode__(self):
-        return "Client UID: %s, Label: %s, Classifier: %s " %(self.assigned_id, self.lbl.name, self.cls.title)
+        output = ''
+        if self.lbl:
+            "Client UID: %s, Label: %s, Classifier: %s " %(self.assigned_id, self.lbl.name, self.cls.title)
+        else:
+            "Client UID: %s, Classifier: %s " %(self.assigned_id, self.cls.title)
+        return output
 
     def __repr__(self):
-        return "Client UID: %s, Label: %s, Classifier: %s " %(self.assigned_id, self.lbl.name, self.cls.title)
+        output = ''
+        if self.lbl:
+            "Client UID: %s, Label: %s, Classifier: %s " %(self.assigned_id, self.lbl.name, self.cls.title)
+        else:
+            "Client UID: %s, Classifier: %s " %(self.assigned_id, self.cls.title)
+        return output

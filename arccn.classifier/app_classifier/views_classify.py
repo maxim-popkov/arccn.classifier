@@ -30,3 +30,33 @@ class ClassifyList(APIView):
                 serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class ClassifyDetail(APIView):
+
+    """
+    Retrieve, update or delete a Test Vectors Details.
+    """
+
+    def get_object(self, cls_id, vec_id):
+        try:
+            return TestVector.objects.get(cls_id=cls_id, assigned_id=vec_id)
+        except TestVector.DoesNotExist:
+            raise Http404
+
+    def get(self, request, cls_id, vec_id, format=None):
+        vector = self.get_object(cls_id, vec_id)
+        serializer = TestVectorSerializer(vector)
+        return Response(serializer.data)
+
+    def put(self, request, cls_id, vec_id, format=None):
+        vector = self.get_object(cls_id, vec_id)
+        serializer = TestVectorSerializer(vector, data=request.DATA)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, cls_id, vec_id, format=None):
+        vector = self.get_object(cls_id, vec_id)
+        vector.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

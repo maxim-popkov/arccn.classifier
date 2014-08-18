@@ -39,6 +39,6 @@ class TestVectorSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = TestVector
-        fields = ('id', 'assigned_id', 'accepted','data', 'cls', 'lbl', 'title')
+        fields = ('id', 'assigned_id', 'accepted', 'synchronized','data', 'cls', 'lbl', 'title')
         # read_only_fields = ('id','lbl','accepted')
         read_only_fields = ('id','accepted')
