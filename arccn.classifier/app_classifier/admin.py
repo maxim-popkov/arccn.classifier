@@ -86,8 +86,18 @@ def classify_action(modeladmin, request, classifiers_set):
             db_test_vector.isClassified = True
             db_test_vector.save()
 
+def accept_action(modeladmin, request, vectors_set):
+    """
+    Set flag accepted in admin interface
+    """
+    if not vectors_set:
+        return
+    for vector in vectors_set:
+        vector.accepted = True
+        vector.save()
 
 class TestVectorAdmin(admin.ModelAdmin):
+    actions = [accept_action]
     list_display = ['_assigned_id', '_title', '_isClassified', 'accepted','_cls', '_lbl']
     list_filter = ('isClassified', 'cls', 'lbl')
     
@@ -110,12 +120,14 @@ class TestVectorAdmin(admin.ModelAdmin):
     def _isClassified(self, obj):
         return obj.isClassified
 
-    _title.short_description = 'Название документа'
-    _assigned_id.short_description = 'Идентификатор клиента'
-    _cls.short_description = 'Классификатор'
-    _lbl.short_description = 'Категория'
-    _isClassified.short_description = 'Статус Классификации'
+    _title.short_description = u'Название документа'
+    _assigned_id.short_description = u'Идентификатор клиента'
+    _cls.short_description = u'Классификатор'
+    _lbl.short_description = u'Категория'
+    _isClassified.short_description = u'Статус Классификации'
     _isClassified.boolean = True
+
+accept_action.short_description = u'Одобрить выбранные'
 
 class LabelInline(admin.TabularInline):
     model = Label
