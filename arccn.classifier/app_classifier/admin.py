@@ -16,14 +16,17 @@ def get_docs(db_vectors):
     Get data from db_vectros to array docs
     """
     docs = []
+    titles = []
     categories = []
     for vector in db_vectors:
         data = vector.data
+        title = vector.title
         label = vector.lbl.assigned_id if vector.lbl else None
         doc = json.loads(data)
         docs.append(doc)
+        titles.append(title)
         categories.append(label)
-    return docs, categories
+    return docs, titles, categories
 
 
 def train_action(modeladmin, request, classifiers_set):
@@ -37,10 +40,15 @@ def train_action(modeladmin, request, classifiers_set):
         # TrainVector.objects.all()
         raw_train_vectors = db_clf.trainvector_set.all()
         title = db_clf.title
-        train_docs, train_labels = get_docs(raw_train_vectors)
+        train_docs, train_titles, train_labels = get_docs(raw_train_vectors)
 
         clf = cf.Classifier()
-        train_set = clf.weight_train_vectors(train_docs)
+        train_pages_set = clf.weight_train_pages(train_docs)
+        logging.info('Pages trained')
+        logging.info(train_titles)
+        train_names_set = clf.weight_train_names(train_titles)
+        logging.info('Names trained')
+        train_set = clf.concatenate(train_pages_set, train_names_set)
         clf.train(train_set, train_labels)
         
         db_clf.is_trained = True
@@ -64,11 +72,13 @@ def classify_action(modeladmin, request, classifiers_set):
     for db_clf in classifiers_set:
         raw_test_vectors = db_clf.testvector_set.all()
         title = db_clf.title
-        test_docs, _ = get_docs(raw_test_vectors)
+        test_docs, test_titles, _ = get_docs(raw_test_vectors)
         clf = cf.Classifier(settings.MEDIA_ROOT, title)    
 
 #    logging.info(test_docs)
-        test_set = clf.weight_test_vectors(test_docs)
+        test_pages_set = clf.weight_test_pages(test_docs)
+        test_names_set = clf.weight_test_names(test_titles)
+        test_set = clf.concatenate(test_pages_set, test_names_set)
         predict_labels = clf.predict(test_set)
         predict_probs = clf.predict_probs(test_set)
         pretty_probs = []
