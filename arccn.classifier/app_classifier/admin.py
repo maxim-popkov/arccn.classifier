@@ -43,6 +43,7 @@ def train_action(modeladmin, request, classifiers_set):
         train_docs, train_titles, train_labels = get_docs(raw_train_vectors)
 
         clf = cf.Classifier()
+        train_docs = clf.term_cleaner(train_docs)
         train_pages_set = clf.weight_train_pages(train_docs)
         logging.info('Pages trained')
         logging.info(train_titles)
@@ -70,7 +71,7 @@ def classify_action(modeladmin, request, classifiers_set):
         return
 
     for db_clf in classifiers_set:
-        raw_test_vectors = db_clf.testvector_set.all()
+        raw_test_vectors = db_clf.testvector_set.filter(accepted=False)
         title = db_clf.title
         test_docs, test_titles, _ = get_docs(raw_test_vectors)
         clf = cf.Classifier(settings.MEDIA_ROOT, title)    
@@ -110,6 +111,7 @@ class TestVectorAdmin(admin.ModelAdmin):
     actions = [accept_action]
     list_display = ['_assigned_id', '_title', '_isClassified', 'accepted','_cls', '_lbl']
     list_filter = ('isClassified', 'cls', 'lbl')
+    search_fields = ('title',)
     
     formfield_overrides = {
         models.CharField: {'widget': TextInput(attrs={'size':'20'})},

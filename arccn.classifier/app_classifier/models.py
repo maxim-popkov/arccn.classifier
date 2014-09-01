@@ -53,8 +53,8 @@ class TrainVector(models.Model):
     title = models.CharField(max_length=512, blank=True, verbose_name=u"Название")
 
     class Meta:
-        verbose_name = u'Обучающий вектор'
-        verbose_name_plural = u'Обучающие вектора'
+        verbose_name = u'Обучающий документ'
+        verbose_name_plural = u'Обучающие документы'
 
 
     def __unicode__(self):
@@ -84,8 +84,8 @@ class TestVector(models.Model):
 
 
     class Meta:
-        verbose_name = u'Классифицируемый вектор'
-        verbose_name_plural = u'Классифицируемые вектора'
+        verbose_name = u'Классифицируемый документ'
+        verbose_name_plural = u'Классифицируемые документы'
 
 
     def __unicode__(self):

@@ -92,7 +92,8 @@ SUIT_CONFIG = {
     'MENU_EXCLUDE': ('auth.group', 'auth'),
     'MENU':(
         {'app':'app_classifier', 'label':u'Букля.Рекомендации'},
-        )
+        ),
+    'SEARCH_URL': '/app_classifier/testvector'
 }
 
 # Internationalization
