@@ -44,7 +44,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','exlibris.arccn.ru']
+ALLOWED_HOSTS = ['localhost','exlibris.arccn.ru','libris.arccn.local']
 
 
 # Application definition
@@ -136,12 +136,12 @@ LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'),)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
-CACHES = {
-    'default':{
-        'BACKEND':'django.core.cache.backends.dummy.DummyCache',
+if DEBUG:
+    CACHES = {
+        'default':{
+            'BACKEND':'django.core.cache.backends.dummy.DummyCache',
+        }
     }
-}
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 
