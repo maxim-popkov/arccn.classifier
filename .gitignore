@@ -12,5 +12,3 @@
 pip
 venv/
 arccn.classifier/secret.txt
-arccn.classifier/files/static/
-arccn.classifier/files/media/
