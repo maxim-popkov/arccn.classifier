@@ -11,4 +11,4 @@
 pip
 venv/
 arccn.classifier/files/
-arccn.classifier/app_arccn/secret.txt
+arccn.classifier/secret.txt
