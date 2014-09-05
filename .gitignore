@@ -10,5 +10,5 @@
 *.sqlite3
 pip
 venv/
-rest/files/
 arccn.classifier/files/
+arccn.classifier/app_arccn/secret.txt

@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'x6m1ah4z%)5!wk0cmi+p5h711r4wtbo9rd4@h-766f4+vfd+=x'
+# SECRET_KEY = 'x6m1ah4z%)5!wk0cmi+p5h711r4wtbo9rd4@h-766f4+vfd+=x'
 
 try:
     SECRET_KEY
@@ -30,7 +30,7 @@ except NameError:
         try:
             import string
             import random
-            SECRET_KEY = ''.join([random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
+            SECRET_KEY = "".join([random.SystemRandom().choice(string.digits + string.letters + string.punctuation) for i in range(100)])
             secret = file(SECRET_FILE, 'w')
             secret.write(SECRET_KEY)
             secret.close()
